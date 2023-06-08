@@ -10,6 +10,8 @@ import {View, Text, Image } from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
+
+
 const Tabs = () => {
   return (
     <Tab.Navigator
@@ -31,21 +33,26 @@ const Tabs = () => {
         name="Main"
         component={MainScreen}
         options={{
+          headerShown: false,
           tabBarIcon: ({focused}) => (
             <View
-              style={{alignItems: 'center', justifyContent: 'center', top: 10}}>
+              style={{
+                alignItems: 'center',
+                justifyContent: 'center',
+                top: 10,
+              }}>
               <Image
                 source={require('../assets/icons/Vector.png')}
                 resizeMode="contain"
                 style={{
                   width: 25,
                   height: 25,
-                  tintColor: focused ? 'royalblue' : 'darkgrey',
+                  tintColor: focused ? '#1DA937' : 'darkgrey',
                 }}
               />
               <Text
                 style={{
-                  color: focused ? 'royalblue' : 'darkgrey',
+                  color: focused ? '#1DA937' : 'darkgrey',
                   fontSize: 12,
                 }}>
                 Головна
@@ -67,12 +74,12 @@ const Tabs = () => {
                 style={{
                   width: 25,
                   height: 25,
-                  tintColor: focused ? 'royalblue' : 'darkgrey',
+                  tintColor: focused ? '#1DA937' : 'darkgrey',
                 }}
               />
               <Text
                 style={{
-                  color: focused ? 'royalblue' : 'darkgrey',
+                  color: focused ? '#1DA937' : 'darkgrey',
                   fontSize: 12,
                 }}>
                 Календар
@@ -94,12 +101,12 @@ const Tabs = () => {
                 style={{
                   width: 25,
                   height: 25,
-                  tintColor: focused ? 'royalblue' : 'darkgrey',
+                  tintColor: focused ? '#1DA937' : 'darkgrey',
                 }}
               />
               <Text
                 style={{
-                  color: focused ? 'royalblue' : 'darkgrey',
+                  color: focused ? '#1DA937' : 'darkgrey',
                   fontSize: 12,
                 }}>
                 Чат
@@ -121,12 +128,12 @@ const Tabs = () => {
                 style={{
                   width: 25,
                   height: 25,
-                  tintColor: focused ? 'royalblue' : 'darkgrey',
+                  tintColor: focused ? '#1DA937' : 'darkgrey',
                 }}
               />
               <Text
                 style={{
-                  color: focused ? 'royalblue' : 'darkgrey',
+                  color: focused ? '#1DA937' : 'darkgrey',
                   fontSize: 12,
                 }}>
                 Профіль
@@ -148,11 +155,11 @@ const Tabs = () => {
                 style={{
                   width: 25,
                   height: 25,
-                  tintColor: focused ? 'green' : 'darkgrey',
+                  tintColor: focused ? '#1DA937' : 'darkgrey',
                 }}
               />
               <Text
-                style={{color: focused ? 'green' : 'darkgrey', fontSize: 12}}>
+                style={{color: focused ? '#1DA937' : 'darkgrey', fontSize: 12}}>
                 Інше
               </Text>
             </View>
