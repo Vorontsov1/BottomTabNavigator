@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Image, ImageBackground, SafeAreaView, StatusBar, TouchableOpacity } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
-
+import * as Fonts from './constans/fonts';
 
 
 const MainScreen = () => {
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   },
   lokoText: {
     fontSize: 24,
-    fontWeight: '700',
+    fontFamily: Fonts.$MONTSERRATLIGHT,
     alignSelf: 'center',
     marginTop: 10,
     color: '#fff',
